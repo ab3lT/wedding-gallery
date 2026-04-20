@@ -30,7 +30,7 @@ export default function BrideSection() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-80px' }}
-          transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] as any}}
           className="text-center max-w-2xl mx-auto"
         >
           <p className="label-am">ምስል በምስል</p>
@@ -56,7 +56,7 @@ export default function BrideSection() {
                   initial={{ opacity: 0, x: reverse ? 40 : -40 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true, margin: '-100px' }}
-                  transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+                  transition={{ duration: 1, ease: [0.22, 1, 0.36, 1]as any }}
                   className={
                     reverse
                       ? 'md:col-span-7 md:order-2'
@@ -86,7 +86,7 @@ export default function BrideSection() {
                   viewport={{ once: true, margin: '-80px' }}
                   transition={{
                     duration: 1,
-                    ease: [0.22, 1, 0.36, 1],
+                    ease: [0.22, 1, 0.36, 1] as any,
                     delay: 0.15,
                   }}
                   className={

@@ -15,7 +15,7 @@ export default function Footer() {
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true, margin: '-80px' }}
-          transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] as any}}
         >
           <p className="font-amharic text-gold-soft tracking-wide-am text-sm">
             በምስጋና

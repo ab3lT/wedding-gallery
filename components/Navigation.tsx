@@ -28,7 +28,7 @@ export default function Navigation() {
       <motion.header
         initial={{ y: -40, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
-        transition={{ duration: 1, ease: [0.22, 1, 0.36, 1], delay: 0.2 }}
+        transition={{ duration: 1, ease: [0.22, 1, 0.36, 1]as any, delay: 0.2 }}
         className={cn(
           'fixed top-0 left-0 right-0 z-50 transition-all duration-500',
           scrolled
@@ -112,7 +112,7 @@ export default function Navigation() {
               initial={{ x: '100%' }}
               animate={{ x: 0 }}
               exit={{ x: '100%' }}
-              transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+              transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] as any }}
               className="absolute top-0 right-0 bottom-0 w-[82%] max-w-xs bg-white shadow-2xl flex flex-col"
             >
               <div className="flex items-center justify-between px-6 py-5 border-b border-gold/20">

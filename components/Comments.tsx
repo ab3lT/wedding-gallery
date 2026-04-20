@@ -257,7 +257,7 @@ export default function Comments() {
                     exit={{ opacity: 0, scale: 0.98 }}
                     transition={{
                       duration: 0.6,
-                      ease: [0.22, 1, 0.36, 1],
+                      ease: [0.22, 1, 0.36, 1] as any,
                       delay: Math.min(i * 0.04, 0.3),
                     }}
                     className="relative bg-ivory-50 border border-gold/20 rounded-[2px] p-6 sm:p-7 hover:border-gold/50 transition-colors"

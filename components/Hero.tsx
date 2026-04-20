@@ -12,7 +12,7 @@ const fadeUp = {
   show: (delay: number) => ({
     opacity: 1,
     y: 0,
-    transition: { duration: 1, ease: [0.22, 1, 0.36, 1], delay },
+    transition: { duration: 1, ease: [0.22, 1, 0.36, 1]as any, delay },
   }),
 };
 
@@ -26,7 +26,7 @@ export default function Hero() {
       <motion.div
         initial={{ scale: 1.15, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}
-        transition={{ duration: 2.5, ease: [0.22, 1, 0.36, 1] }}
+        transition={{ duration: 2.5, ease: [0.22, 1, 0.36, 1] as any}}
         className="absolute inset-0"
       >
         <Image

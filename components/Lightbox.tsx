@@ -56,7 +56,7 @@ export default function Lightbox({
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] as any}}
           className="fixed inset-0 z-[80] flex items-center justify-center"
           role="dialog"
           aria-modal="true"
@@ -110,7 +110,7 @@ export default function Lightbox({
             initial={{ opacity: 0, scale: 0.96 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.96 }}
-            transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
+            transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] as any}}
             className="relative z-[5] max-w-[92vw] max-h-[88vh] w-full sm:w-auto flex flex-col items-center"
             onClick={(e) => e.stopPropagation()}
           >

@@ -32,7 +32,7 @@ export default function CoupleStory() {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-100px' }}
-          transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] as any }}
           className="text-center max-w-3xl mx-auto"
         >
           <h2 className="font-amharic font-normal text-display-lg text-ink text-balance leading-tight">
@@ -57,7 +57,7 @@ export default function CoupleStory() {
               viewport={{ once: true, margin: '-60px' }}
               transition={{
                 duration: 0.8,
-                ease: [0.22, 1, 0.36, 1],
+                ease: [0.22, 1, 0.36, 1 ] as any, 
                 delay: i * 0.12,
               }}
               className="relative text-center group"

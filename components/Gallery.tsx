@@ -67,7 +67,7 @@ export default function Gallery() {
                 viewport={{ once: true, margin: '-40px' }}
                 transition={{
                   duration: 0.7,
-                  ease: [0.22, 1, 0.36, 1],
+                  ease: [0.22, 1, 0.36, 1]as any,
                   delay: (i % 4) * 0.08,
                 }}
                 className={cn(
@@ -84,7 +84,7 @@ export default function Gallery() {
                   fill
                   loading={i < 4 ? 'eager' : 'lazy'}
                   sizes="(max-width: 768px) 50vw, 25vw"
-                  className="object-cover transition-transform duration-[1200ms] ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:scale-[1.08]"
+                  className="object-cover transition-transform duration-[1200ms] ease-[cubic-bezier(0.22,1,0.36,1)as any] group-hover:scale-[1.08]"
                 />
 
                 {/* Hover wash */}

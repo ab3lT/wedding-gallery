@@ -21,7 +21,7 @@ export default function FloralDivider({
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: '-80px' }}
-      transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+      transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1]as any }}
       className="flex items-center justify-center gap-5 py-8"
     >
       <span
