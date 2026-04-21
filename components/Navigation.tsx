@@ -42,11 +42,14 @@ export default function Navigation() {
             className="flex items-center gap-2.5 group"
             aria-label="Home"
           >
-          
+       
 <img
   src="gallery/narbar.png"
   alt="Logo"
-  className="h-16 sm:h-20 md:h-24 w-auto transition-all duration-300"
+  className={cn(
+    'w-auto transition-all duration-300',
+    scrolled ? 'h-12 sm:h-14' : 'h-20 sm:h-24'
+  )}
 />
           </a>
 
