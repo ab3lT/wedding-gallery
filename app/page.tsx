@@ -6,6 +6,9 @@ import BrideSection from '@/components/BrideSection';
 import Comments from '@/components/Comments';
 import Footer from '@/components/Footer';
 import MusicToggle from '@/components/MusicToggle';
+import { createClient } from '@/utils/supabase/server'
+import { cookies } from 'next/headers'
+
 
 export default function Home() {
   return (

@@ -1,41 +1,22 @@
 import { NextResponse } from 'next/server';
+import { supabase } from '@/lib/supabase';
 import type { Comment, CreateCommentPayload } from '@/types';
 
-/**
- * In-memory comment store.
- *
- * NOTE: Resets on server restart. For production, swap for a real
- * database — see README.md for Firebase / Supabase drop-in examples.
- */
-const comments: Comment[] = [
-  {
-    id: 'seed-1',
-    name: 'ሃና',
-    message:
-      'መሰሬ — በመተላለፊያው ላይ ስትጓዢ ማየት የህይወቴ እጅግ ቆንጆ ከሆኑ ጊዜያት አንዱ ነበር። ለሁለታችሁም የዕድሜ ልክ ፍቅር እመኛለሁ። 💛',
-    createdAt: new Date(Date.now() - 1000 * 60 * 60 * 26).toISOString(),
-  },
-  {
-    id: 'seed-2',
-    name: 'ዳዊት እና ሰላም',
-    message:
-      'ለምናውቃት እጅግ ብሩህ ሙሽራ እንኳን ደስ አለሽ። ጋብቻችሁ ልክ እንደ ዛሬው ደስታ የተሞላ ይሁን።',
-    createdAt: new Date(Date.now() - 1000 * 60 * 60 * 8).toISOString(),
-  },
-  {
-    id: 'seed-3',
-    name: 'አጎት ግርማ',
-    message: 'በሁለታችሁም እኮራለሁ። ከአዲስ አበባ በረከት እልካለሁ። 🌿',
-    createdAt: new Date(Date.now() - 1000 * 60 * 45).toISOString(),
-  },
-];
-
 export async function GET() {
-  // Newest first
-  const sorted = [...comments].sort(
-    (a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime()
-  );
-  return NextResponse.json({ comments: sorted });
+  const { data: comments, error } = await supabase
+    .from('comments')
+    .select('*')
+    .order('created_at', { ascending: false });
+
+  if (error) {
+    console.error('Error fetching comments:', error);
+    return NextResponse.json(
+      { error: 'መልዕክቶችን ለማምጣት አልተሳካም።' },
+      { status: 500 }
+    );
+  }
+
+  return NextResponse.json({ comments });
 }
 
 export async function POST(request: Request) {
@@ -65,14 +46,22 @@ export async function POST(request: Request) {
     );
   }
 
-  const comment: Comment = {
-    id: `${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
-    name,
-    message,
-    createdAt: new Date().toISOString(),
-  };
+  const { data: comment, error } = await supabase
+    .from('comments')
+    .insert({
+      name,
+      message,
+    })
+    .select()
+    .single();
 
-  comments.push(comment);
+  if (error) {
+    console.error('Error creating comment:', error);
+    return NextResponse.json(
+      { error: 'መልዕክት ለመላክ አልተሳካም።' },
+      { status: 500 }
+    );
+  }
 
   return NextResponse.json({ comment }, { status: 201 });
 }
