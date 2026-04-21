@@ -124,9 +124,9 @@ export default function Hero() {
           initial="hidden"
           animate="show"
           href="#gallery"
-          className="group mt-14 inline-flex items-center gap-3 rounded-full border border-white/40 bg-white/10 px-7 py-3.5 backdrop-blur-sm transition-all duration-500 hover:bg-white hover:text-ink hover:border-white"
+          className="group mt-14 inline-flex items-center gap-3 rounded-full border border-white/40 bg-gold/10 px-7 py-3.5 backdrop-blur-sm transition-all duration-500 hover:bg-white hover:text-ink hover:border-white"
         >
-          <span className="font-amharic text-white group-hover:text-ink transition-colors text-sm tracking-wide-am">
+          <span className="font-amharic text-white group-hover:text-gold transition-colors text-sm tracking-wide-am">
             ምስሎችን ይመልከቱ
           </span>
           <ArrowDown
