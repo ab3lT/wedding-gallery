@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import { cn } from '@/lib/utils';
-
+import Image from 'next/image';
 const LINKS = [
   { href: '#story', label: 'ታሪካችን' },     // Our Story
   { href: '#gallery', label: 'ምስሎች' },    // Gallery
