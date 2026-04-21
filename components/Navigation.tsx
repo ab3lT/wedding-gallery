@@ -42,45 +42,28 @@ export default function Navigation() {
             className="flex items-center gap-2.5 group"
             aria-label="Home"
           >
-            <span
-              className={cn(
-                'font-amharic text-2xl sm:text-3xl leading-none transition-colors',
-                scrolled ? 'text-gold-dark' : 'text-gold'
-              )}
-            >
-              አ
-            </span>
-            <span
-              className={cn(
-                'font-display italic text-sm transition-colors',
-                scrolled ? 'text-ink-muted' : 'text-ink-muted/80'
-              )}
-            >
-              ·
-            </span>
-            <span
-              className={cn(
-                'font-amharic text-2xl sm:text-3xl leading-none transition-colors',
-                scrolled ? 'text-gold-dark' : 'text-gold'
-              )}
-            >
-              ም
-            </span>
+          
+<img
+  src="gallery/narbar.png"
+  alt="Logo"
+  className="h-16 sm:h-20 md:h-24 w-auto transition-all duration-300"
+/>
           </a>
 
           <ul className="hidden md:flex items-center gap-10">
+           
             {LINKS.map((link) => (
-              <li key={link.href}>
-                <a
-                  href={link.href}
-                  className={cn(
-                    'label-am gold-underline !text-base transition-colors hover:text-ink'
-                  )}
-                >
-                  {link.label}
-                </a>
-              </li>
-            ))}
+  <li key={link.href}>
+    <a
+      href={link.href}
+      className={cn(
+        'label-am !text-base text-gold transition-colors hover:text-white gold-underline '
+      )}
+    >
+      {link.label}
+    </a>
+  </li>
+))}
           </ul>
 
           <button
