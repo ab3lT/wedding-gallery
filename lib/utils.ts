@@ -48,3 +48,24 @@ export function formatRelativeTime(iso: string): string {
 
   return year === thisYear ? `${month} ${day}` : `${month} ${day} ፣ ${year}`;
 }
+
+/**
+ * Return the Ethiopian calendar year for a given Gregorian date.
+ *
+ * Simple rule used here:
+ * - If the Gregorian date is before September 11 (exclusive) the Ethiopian year
+ *   is GregorianYear - 8
+ * - Otherwise it's GregorianYear - 7
+ *
+ * This matches the common mapping for the Ethiopian new year (Enkutatash)
+ * which falls on September 11 in most years.
+ */
+export function getEthiopianYear(inputDate?: Date): number {
+  const date = inputDate ? new Date(inputDate) : new Date();
+  const gy = date.getFullYear();
+  const gm = date.getMonth() + 1; // 1-12
+  const gd = date.getDate();
+
+  // If before Sep 11 -> subtract 8, otherwise subtract 7
+  return gm < 9 || (gm === 9 && gd < 11) ? gy - 8 : gy - 7;
+}

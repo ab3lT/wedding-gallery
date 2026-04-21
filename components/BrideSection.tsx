@@ -33,13 +33,12 @@ export default function BrideSection() {
           transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] as any}}
           className="text-center max-w-2xl mx-auto"
         >
-          <p className="label-am">ምስል በምስል</p>
+          <p className="label-am">ሙሽሪትን በምስል</p>
           <h2 className="mt-3 font-amharic font-normal text-display-lg text-ink text-balance">
-            ለ <span className="text-gold-dark italic">ምስራቅ</span> ፣ በፍቅር
+            ለ <span className="text-gold-dark italic">ምስሪ</span> ፣ በፍቅር
           </h2>
           <p className="mt-6 font-amharic text-lg text-ink-muted text-pretty leading-relaxed">
-            ከሥነ ሥርዓቱ በፊት ፣ በእቅፋች መካከል ፣ እና ከእንባ በኋላ ፤ የሙሽሪት ጸጥ
-            ያሉ ጥቂት ምስሎች።
+            ከሥነ ሥርዓቱ በፊት ፣ በእቅፎች መካከል ፣ የሙሽሪት  ውብ ምስሎች።
           </p>
         </motion.div>
 

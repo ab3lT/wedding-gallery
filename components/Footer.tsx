@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { getEthiopianYear } from '../lib/utils';
 
 export default function Footer() {
   return (
@@ -28,18 +29,17 @@ export default function Footer() {
           <div className="mt-6 flex items-center justify-center gap-5">
             <span className="h-px w-16 bg-gold/40" />
             <span className="font-amharic text-gold/80 tracking-wide-am text-sm">
-              ሰኔ ፲፬ ፣ ፳፻፲፰
+              መጋቢት ፲፰ ፣ ፳፻፲፰
             </span>
             <span className="h-px w-16 bg-gold/40" />
           </div>
           <p className="mt-10 font-amharic text-white/75 max-w-lg mx-auto text-pretty leading-relaxed">
-            በአካል ወይም ከሩቅ ፣ ከእኛ ጋር በማክበርዎ እናመሰግናለን። ፍቅራችሁ ልንጠይቀው
-            የምንችለው ምርጡ ስጦታ ነው።
+            በአካልም ሆነ ከሩቅ ፣ የጋብቻ በአላችንን ስላከበራችሁልን እጅግ አድርገን እናመሰግናለን።እግዚአበሄር ያክብርልን።
           </p>
         </motion.div>
 
         <div className="mt-20 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3 font-amharic text-[12px] text-white/50">
-          <span>© {new Date().getFullYear()} ቤተሰቡ</span>
+          <span>© {getEthiopianYear()}  ቤተሰቡ</span>
           <span>አዲስ አበባ ፣ ኢትዮጵያ</span>
           <span>በፍቅር የተሠራ</span>
         </div>

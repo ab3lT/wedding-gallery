@@ -103,7 +103,7 @@ export default function Comments() {
             ይተዉ
           </h2>
           <p className="mt-6 font-amharic text-lg text-ink-muted text-pretty leading-relaxed">
-            ምኞት ፣ ምርቃት ፣ ወይም አንድ ትዝታ — ምስራቅ አንድ ቀን የምታነበው ምንም ቢሆን።
+            ምኞት ፣ ምርቃት ፣ ወይም አንድ ትዝታ — ምስሪ አንድ ቀን የምታነበው።
           </p>
         </motion.div>
 
@@ -192,7 +192,7 @@ export default function Comments() {
                   className="font-amharic text-sm text-gold-dark flex items-center gap-2"
                 >
                   <Heart size={12} strokeWidth={2} fill="currentColor" />
-                  አመሰግናለሁ — መልዕክትዎ ደርሷል።
+                  እናመሰግናለን — መልዕክትዎ ደርሷል።
                 </motion.p>
               )}
             </AnimatePresence>

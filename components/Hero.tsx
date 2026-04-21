@@ -4,6 +4,8 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { ArrowDown } from 'lucide-react';
 
+import { getEthiopianYear } from '../lib/utils';
+
 // const HERO_IMAGE =
   // 'https://images.unsplash.com/photo-1519741497674-611481863552?w=2400&q=85&auto=format&fit=crop';
 const HERO_IMAGE = '/gallery/01.JPG';
@@ -69,7 +71,7 @@ export default function Hero() {
           animate="show"
           className="font-amharic text-white/90 text-xl sm:text-2xl mb-6 tracking-wide-am"
         >
-          የዲያቆን አሮን እና የምስራቅ
+          የዲያቆን አሮን እና የወ/ሪት ምስራቅ
         </motion.p>
 
         <motion.h1
@@ -101,7 +103,7 @@ export default function Hero() {
         >
           <span className="h-px w-10 bg-gold-soft/70" />
           <span className="font-amharic text-gold-soft text-sm sm:text-base tracking-wide-am">
-            ሰኔ ፲፬ ፣ ፳፻፲፰
+            መጋቢት ፲፰ ፣ ፳፻፲፰
           </span>
           <span className="h-px w-10 bg-gold-soft/70" />
         </motion.div>
@@ -146,7 +148,7 @@ export default function Hero() {
         <span className="hidden sm:inline font-amharic tracking-wide-am">
           — ለዘላለም —
         </span>
-        <span className="font-sans tracking-widest">2026</span>
+        <span className="font-sans tracking-widest">{getEthiopianYear()} </span>
       </motion.div>
     </section>
   );

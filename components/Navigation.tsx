@@ -147,7 +147,7 @@ export default function Navigation() {
                 ))}
               </ul>
               <div className="px-8 py-6 border-t border-gold/20">
-                <p className="label-lt">14 · 06 · 2026</p>
+                <p className="label-lt">18 - 07 - 2018</p>
                 <p className="font-amharic text-xl mt-2">አዲስ አበባ</p>
               </div>
             </motion.div>
