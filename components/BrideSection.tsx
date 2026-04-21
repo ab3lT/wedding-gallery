@@ -96,6 +96,7 @@ export default function BrideSection() {
                 >
                   <p className="label-am">
                     ቁጥር {String(i + 1).padStart(2, '0')}
+                    {/*can we use some bible vereses instead of ቁጥር */}
                   </p>
                   <h3 className="mt-3 font-amharic text-gold-dark text-4xl sm:text-5xl leading-tight">
                     {photo.caption}
