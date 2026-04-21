@@ -6,7 +6,7 @@ import { ArrowDown } from 'lucide-react';
 
 // const HERO_IMAGE =
   // 'https://images.unsplash.com/photo-1519741497674-611481863552?w=2400&q=85&auto=format&fit=crop';
-const HERO_IMAGE = '/gallery/01.jpg.JPG';
+const HERO_IMAGE = '/gallery/01.JPG';
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
   show: (delay: number) => ({
