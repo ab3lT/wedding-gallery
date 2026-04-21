@@ -64,7 +64,7 @@ export default function Navigation() {
                 scrolled ? 'text-gold-dark' : 'text-gold'
               )}
             >
-              መ
+              ም
             </span>
           </a>
 
@@ -117,7 +117,7 @@ export default function Navigation() {
             >
               <div className="flex items-center justify-between px-6 py-5 border-b border-gold/20">
                 <span className="font-amharic text-3xl text-gold-dark leading-none">
-                  አ · መ
+                  አ · ም
                 </span>
                 <button
                   type="button"

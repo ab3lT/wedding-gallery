@@ -75,7 +75,7 @@ Names appear in a handful of spots:
 
 - Metadata &amp; page title — `app/layout.tsx`
 - Hero copy — `components/Hero.tsx`
-- Navigation monogram (አ · መ) — `components/Navigation.tsx`
+- Navigation monogram (አ · ም) — `components/Navigation.tsx`
 - Footer signature — `components/Footer.tsx`
 - The big "ምስራቅ" watermark in the bride section — `components/BrideSection.tsx`
 
