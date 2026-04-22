@@ -69,9 +69,11 @@ export default function Hero() {
           custom={0.9}
           initial="hidden"
           animate="show"
-          className="font-amharic text-white/90 text-xl sm:text-2xl mb-6 tracking-wide-am"
+          className="font-amharic text-white/90 text-lg sm:text-xl mb-4 tracking-wide-am"
         >
-          የዲያቆን አሮን እና የወ/ሪት ምስራቅ
+          " በቃና ዘገሊላ ሰርግ የወረደች የእግዚአብሔር በረከት ትደርባችኹ። " መጽሐፈ ተክሊል
+
+          {/*የዲያቆን አሮን እና የወ/ሪት ምስራቅ */}
         </motion.p>
 
         <motion.h1
@@ -81,7 +83,7 @@ export default function Hero() {
           animate="show"
           className="font-amharic font-normal text-white text-display-xl text-balance"
         >
-          አሮን
+         ዲያቆን አሮን
           <motion.span
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
@@ -91,7 +93,7 @@ export default function Hero() {
           >
             እና
           </motion.span>
-          ምስራቅ
+          ወ/ሪት ምስራቅ
         </motion.h1>
 
         <motion.div
@@ -146,7 +148,9 @@ export default function Hero() {
       >
         <span className="font-amharic tracking-wide-am">ቁ. ፩</span>
         <span className="hidden sm:inline font-amharic tracking-wide-am">
-          — ለዘላለም —
+          {/* — ለዘላለም — */}
+          ⁠"ክርስቶስ ራሱ የድንግልና አክሊል ነው፤ በእርሱ እውነተኛ ፍጹም የኾነ ድንግልና ተገልጧልና።"ሊቁ ዮሐንስ ዘደማስቆ
+
         </span>
         <span className="font-sans tracking-widest">{getEthiopianYear()} </span>
       </motion.div>

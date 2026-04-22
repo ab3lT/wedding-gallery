@@ -19,7 +19,8 @@ export default function Footer() {
           transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] as any}}
         >
           <p className="font-amharic text-gold-soft tracking-wide-am text-sm">
-            በምስጋና
+            " ስለማይነገር ስጦታው እግዚአብሔር ይመስገን። " 2.ኛ.ቆሮ 9፥15
+
           </p>
           <h2 className="mt-6 font-amharic text-gold-soft text-5xl sm:text-6xl md:text-7xl leading-tight">
             አሮን{' '}
@@ -39,7 +40,7 @@ export default function Footer() {
         </motion.div>
 
         <div className="mt-20 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-3 font-amharic text-[12px] text-white/50">
-          <span>© {getEthiopianYear()}  ቤተሰቡ</span>
+          <span>© {getEthiopianYear()}  </span>
           <span>አዲስ አበባ ፣ ኢትዮጵያ</span>
           <span>በፍቅር የተሠራ</span>
         </div>

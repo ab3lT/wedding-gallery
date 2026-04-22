@@ -5,20 +5,20 @@ import FloralDivider from './FloralDivider';
 
 const MILESTONES = [
   {
-    year: '2019',
-    label: 'በአዲስ አበባ በአንድ ጓደኛቸው የልደት በዓል ላይ ለመጀመሪያ ጊዜ ተገናኙ።',
+    year: '2015',
+    label: 'በአዲስ አበባ በአንድ ጓደኛቸው የጋብቻ በዓል ላይ ለመጀመሪያ ጊዜ ተገናኙ።',
   },
   {
-    year: '2021',
+    year: '2016',
     label: 'አንዲት የቡና ቀጠሮ ወደ መቶ ተለወጠች።',
   },
   {
-    year: '2024',
-    label: 'እሱ ጠየቃት። እሷም እሺ አለች — ያለምንም ጥርጣሬ።',
+    year: '2018',
+    label: 'ህዳር ወር ሽምግልና ተላከ ። እሷም እሺ አለች — ያለምንም ጥርጣሬ።',
   },
   {
-    year: '2026',
-    label: 'ዛሬ — የሁሉም ነገር ጅማሬ። እግዚአብሄር ይመሰገን!',
+    year: '2018',
+    label: 'ዛሬ — መጋቢት 18 የሁሉም ነገር ጅማሬ። እግዚአብሄር ይመሰገን!',
   },
 ];
 
@@ -35,13 +35,14 @@ export default function CoupleStory() {
           transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] as any }}
           className="text-center max-w-3xl mx-auto"
         >
-          <h2 className="font-amharic font-normal text-display-lg text-ink text-balance leading-tight">
-            ሁለት ሕይወቶች በእርጋታ{' '}
-            <span className="text-gold-dark italic">ወደ አንድ እየሆኑ</span>
+          <h2 className="font-amharic font-normal text-display-md text-ink text-balance leading-tight">
+            ሁልጊዜ በጌታ ደስ ይበላችኹ፤{' '}
+            <span className="text-gold-dark italic"> ደግሜ እላለሁ ደስ ይበላችኹ።" </span>
+            <span className="text-sm"> ፊልጵ.4፥4 </span>
           </h2>
           <p className="mt-8 font-amharic text-lg sm:text-xl leading-relaxed text-ink-light text-pretty">
-           በተጨናነቀ ክፍል ውስጥ በቀላል ሰላምታ የጀመረው ትውውቃቸው፣ ቀስ በቀስ ወደ እንጦጦ መናፈ ጉዞዎች፣ አብረው ወደተጠጡት ቡና፣ ወደ ሌሊት ስልክ ጥሪዎች፣ እና ይህ ለዘላለም እንደሆነ ወደሚሰማቸው እርግጠኝነት አደገ።
-ዛሬ፣ በፍቅር ተባርከው በሚወዷቸው ሁሉ ክብር ተሸፍነው፣ አሮን እና ምስራቅ በዚህ የፍቅር ቀን የቀሪ ሕይወታቸውን ጉዞ አንድ ሆነው ለመጀመር ቃል ገቡ።
+            በተጨናነቀ ክፍል ውስጥ በቀላል ሰላምታ የጀመረው ትውውቃቸው፣ ቀስ በቀስ ወደ እንጦጦ መናፈሻ ጉዞዎች፣ አብረው ወደተጠጡት ቡና፣ ወደ ምሽት ስልክ ጥሪዎች፣ እና ለዘላለም እንደሆነ ወደሚሰማቸው እርግጠኝነት አደገ።
+            ዛሬ፣ በፍቅር ተባርከው በሚወዷቸው ሁሉ ክብር ተሸፍነው፣ አሮን እና ምስራቅ በዚህ የፍቅር ቀን የቀሪ ሕይወታቸውን ጉዞ አንድ ሆነው ለመጀመር ቃል ገቡ።
           </p>
         </motion.div>
 
@@ -55,7 +56,7 @@ export default function CoupleStory() {
               viewport={{ once: true, margin: '-60px' }}
               transition={{
                 duration: 0.8,
-                ease: [0.22, 1, 0.36, 1 ] as any, 
+                ease: [0.22, 1, 0.36, 1] as any,
                 delay: i * 0.12,
               }}
               className="relative text-center group"
@@ -78,6 +79,7 @@ export default function CoupleStory() {
             className="pointer-events-none absolute top-6 left-[12.5%] right-[12.5%] h-px hidden lg:block ornament-line"
           />
         </div>
+        
       </div>
     </section>
   );
