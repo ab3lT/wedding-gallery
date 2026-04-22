@@ -19,7 +19,7 @@ export default function Footer() {
           transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] as any}}
         >
           <p className="font-amharic text-gold-soft tracking-wide-am text-sm">
-            " ስለማይነገር ስጦታው እግዚአብሔር ይመስገን። " 2.ኛ.ቆሮ 9፥15
+            &quot; ስለማይነገር ስጦታው እግዚአብሔር ይመስገን። &quot; 2.ኛ.ቆሮ 9፥15
 
           </p>
           <h2 className="mt-6 font-amharic text-gold-soft text-5xl sm:text-6xl md:text-7xl leading-tight">

@@ -43,14 +43,21 @@ export default function Navigation() {
             aria-label="Home"
           >
        
-<Image
-  src="gallery/narbar.png"
-  alt="Logo"
+<div
   className={cn(
-    'w-auto transition-all duration-300',
-    scrolled ? 'h-12 sm:h-14' : 'h-20 sm:h-24'
+    'relative transition-all duration-300',
+    scrolled ? 'h-12 sm:h-14' : 'h-20 sm:h-24',
+    'w-[120px] sm:w-[150px]' // control width manually
   )}
-/>
+>
+  <Image
+    src="/gallery/narbar.png"
+    alt="Logo"
+    fill
+    className="object-contain"
+    priority
+  />
+</div>
           </a>
 
           <ul className="hidden md:flex items-center gap-10">

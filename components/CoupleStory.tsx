@@ -37,7 +37,7 @@ export default function CoupleStory() {
         >
           <h2 className="font-amharic font-normal text-display-md text-ink text-balance leading-tight">
             ሁልጊዜ በጌታ ደስ ይበላችኹ፤{' '}
-            <span className="text-gold-dark italic"> ደግሜ እላለሁ ደስ ይበላችኹ።" </span>
+            <span className="text-gold-dark italic"> ደግሜ እላለሁ ደስ ይበላችኹ።&quot; </span>
             <span className="text-sm"> ፊልጵ.4፥4 </span>
           </h2>
           <p className="mt-8 font-amharic text-lg sm:text-xl leading-relaxed text-ink-light text-pretty">

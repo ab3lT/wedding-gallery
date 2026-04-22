@@ -71,7 +71,7 @@ export default function Hero() {
           animate="show"
           className="font-amharic text-white/90 text-lg sm:text-xl mb-4 tracking-wide-am"
         >
-          " በቃና ዘገሊላ ሰርግ የወረደች የእግዚአብሔር በረከት ትደርባችኹ። " መጽሐፈ ተክሊል
+          &quot; በቃና ዘገሊላ ሰርግ የወረደች የእግዚአብሔር በረከት ትደርባችኹ። &quot; መጽሐፈ ተክሊል
 
           {/*የዲያቆን አሮን እና የወ/ሪት ምስራቅ */}
         </motion.p>
@@ -149,7 +149,7 @@ export default function Hero() {
         <span className="font-amharic tracking-wide-am">ቁ. ፩</span>
         <span className="hidden sm:inline font-amharic tracking-wide-am">
           {/* — ለዘላለም — */}
-          ⁠"ክርስቶስ ራሱ የድንግልና አክሊል ነው፤ በእርሱ እውነተኛ ፍጹም የኾነ ድንግልና ተገልጧልና።"ሊቁ ዮሐንስ ዘደማስቆ
+          ⁠&quot;ክርስቶስ ራሱ የድንግልና አክሊል ነው፤ በእርሱ እውነተኛ ፍጹም የኾነ ድንግልና ተገልጧልና።&quot;ሊቁ ዮሐንስ ዘደማስቆ
 
         </span>
         <span className="font-sans tracking-widest">{getEthiopianYear()} </span>
