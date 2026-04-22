@@ -43,7 +43,7 @@ export default function Navigation() {
             aria-label="Home"
           >
        
-<img
+<Image
   src="gallery/narbar.png"
   alt="Logo"
   className={cn(
