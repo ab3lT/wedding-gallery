@@ -118,7 +118,7 @@ export const bridePhotos: BridePhoto[] = [
   },
   {
     id: 'b2',
-    src: '/gallery/16.JPG',
+    src: '/gallery/18.JPG',
     alt: 'ሙሽሪት በለስላሳ ብርሃን ውስጥ በአበባ',
     caption: 'በአበባ',
     description:
@@ -126,7 +126,7 @@ export const bridePhotos: BridePhoto[] = [
   },
   {
     id: 'b3',
-    src: 'https://images.unsplash.com/photo-1525258946800-98cfd641d0de?w=1200&q=80&auto=format&fit=crop',
+    src: '/gallery/17.JPG',
     alt: 'ሙሽሪት ስትሳቅ',
     caption: 'ንጹህ ደስታ',
     description:
