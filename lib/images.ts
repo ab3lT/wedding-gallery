@@ -111,14 +111,14 @@ export const bridePhotos: BridePhoto[] = [
   {
     id: 'b1',
     src: '/gallery/16.JPG',
-    alt: 'የሙሽሪት ምስል በጋዋን',
+    alt: 'የሙሽሪት ምስል ',
     caption: 'የጠዋቱ ዝግጅት',
     description:
       'ከሥነ ሥርዓቱ በፊት ያሉት ጸጥ ያሉ ደቂቃዎች — መጋረጃዋ ብርሃንን ሲይዝ፣ ልቧ በመረጋጋት እና በደስታ መካከል።',
   },
   {
     id: 'b2',
-    src: '/gallery/17.JPG',
+    src: '/gallery/16.JPG',
     alt: 'ሙሽሪት በለስላሳ ብርሃን ውስጥ በአበባ',
     caption: 'በአበባ',
     description:
